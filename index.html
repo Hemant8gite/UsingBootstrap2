@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Side - by Hemant</title>
+    
+        <!-- icon -->
+        <link rel="icon" href="#">
+
+        <!-- CDN logo -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+        <!-- AOS Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+        <!-- css style -->
+        <link rel="stylesheet" href="css/style.css">
+     
+</head>
+<body>
+    <section class="main1">
+        <header>
+            <section class="head1 py-2 border-bottom d-none d-lg-block">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div>
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#" class="pe-3 text-secondary"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" class="pe-3 text-secondary"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="pe-3 text-secondary"><i class="fas fa-basketball-ball"></i></a></li>
+                            <li><a href="#" class=" text-secondary"><i class="fab fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <span class="dropdown p-2 border rounded mx-2" data-bs-target="#dropdownHead" data-bs-toggle="dropdown">English</span>
+                            <ul class="dropdown-menu" id="dropdownHead">
+                                <li class="dropdown-item"><a href="#">English</a></li>
+                                <li class="dropdown-item"><a href="#">Bangla</a></li>
+                                <li class="dropdown-item"><a href="#">India</a></li>
+                                <li class="dropdown-item"><a href="#">Aus</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn_1 btn bg-warning fw-bold text-light">Free Quats!</a>
+                    </div>
+                </div>
+            </section>
+            <section class="nav_bar">
+                <div class="">
+                    <div class="container">
+                        <div class="py-2"></div>
+                        <nav class="navbar px-md-5 navbar-expand-lg " id="NavBar">
+                            
+                                <div>
+                                    <a href="#" class="nav-brand"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAAsCAMAAACdUFw8AAABaFBMVEUAAAD6twD////6twD6twD6twD6twD6twD6twD6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twD6twD6twD6twD6twD6twD6twAiIiL6twD6twD6twD6twD6twD6twD6twD6twD6twD6twD6twD6twD6twAiIiL6twC7P/maAAAAdnRSTlMAAAABAgQFBgcJCwwPEBEUGBkeIiIjJCgqLDEzODpAQURER0hNUVVWWFlcXl9iY2ZmanN0dXd4ent9gYSIjI6PlZmdpKWmqKqur7KztLW2t7u/wsTFx8zOz9DV293d3uHj5ufp6uvs7e7v8PLz9PX29/n6+/3+PawTxwAAAzJJREFUWMPl2I1X0zAQAPBmDBBxUVYFZDCrSPEDrKBTkaFOxaKg1A86hSoCToOiEyfNv+9dskLLurkJrb7nvQdNC9uvzV3apAppKhIRhPIP0f3z3+f7/wadulvhnFfupOKm2ydKXEZpoj1WOvsG0G9Tp6fKsH2djY8+NQfgzmwamunZHWjPnYyH7p7GSy0OYbfDz1AR9srT3dHTbWNrQK2NJwkZfFl5AhWeHF/HI2NtEdODS8Bsz0BZ99z/iRWOzdTMNjSXBqOkex5iZp/2EtJ5bctf4b3PMPsPeiKjR5FbHobvP7/C92L5LBwZXobW1mhUNAzlzckOuI0t8mDMQT90TG5y/jEqmvONNGb2B98fIvvpDc4b0UowMqrSOIL0AiGXSzwsPpwjZKEVmrluTqGGoftOxjDURnTfYijN34XRNF/AyOs1NHVd11F0+B04G6MRDRW1EkZ/DqPxq2VoIbSJNAvQemOadGJFtUi7dF+HZ3I5pXWakBPiftIUzTKaZgOtJ1TLMvErddsCNW9a2i5tOMwxqSNpWoA9+CN8PmfZGd2x/TQhA6+apXEraM8xsavlJVYPObt9A7RWbVrwOSZaLEiTtourTdMZkey6tOX6aHW3XahHE3JUPMJ+m2vHwYtiibo0npibU/OSxvMwlIwjykPQtllDE3Kz+TJT69P4TxomXNBw3KQq1USOmDiBRAh9o6UKr0cXvDJHjbq+3kc6n/hj2su12TptIK0fjE7YVdqtDt8AjUmmcFz1aBPGo6brOj0EmjKPLihKzg0pM0YVlYlc22IHN+5BaZcxJoeK6Eu5Exxc4hCrDi4xrG0mB/YBaRlw8aJnZQRp1T+uMfVeYR4GzQriyZUTl2+Kfneql4gVporbmV69kRqyY2giQK8ea42ueV7DiA2dFlBVrdnzPz5garYy3JB+H9UE6To+rhb769PrZyKbDA889+ZhofSlVJRLgJG3OPW+mgylI174dN3CyXgxu59evRDDck+ueB6l/U+u8u2ueBa5IuXl6a4jLyQs17sxLe1HcFL69ZOUi9lYX2jsTUpLV5Jxv8Y5fq8SHGnxvrz68rjvv3tlFx/9CxMTXlH/9oyNAAAAAElFTkSuQmCC" alt="Logo"></a>
+                                </div>
+                                <div class="ms-auto">
+                                    <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navDrop"><span class="navbar-nav"><i class="fas fa-bars text-warning"></i></span></button>
+                                </div>
+                            
+                               
+                                <div class="ms-auto pt-4 d-none d-lg-block">
+                                    <ul class="collapse navbar-collapse " id="navDrop">
+                                        <li class="nav-item h6 px-2 small fw-bold "><a href="#HOME" class="NavLInkH nav-link pe-2 ">HOME</a></li>
+                                        <li class="nav-item h6 px-2 small fw-bold "><a href="#ABOUT" class="NavLInkH nav-link pe-2">ABOUT</a></li>
+                                        <li class="nav-item h6 px-2 small fw-bold "><a href="#SERVICES" class="NavLInkH nav-link pe-2">SERVICES</a></li>
+                                        <li class="nav-item h6 px-2 small fw-bold position-relative">
+                                            <a href="#PAGES" class="NavLInkH nav-link pe-2 dropdown" data-bs-target="#DropDownPage" data-bs-toggle="dropdown">PAGES</a>
+                                            <ul class="dropdown-menu position-absolute" id="DropDownPage">
+                                                <li class="dropdown-item h6 px-2 small fw-bold"><a href="#Projects" class="NavLInkH text-uppercase">Projects</a></li>
+                                                <li class="dropdown-item h6 px-2 small fw-bold"><a href="#" class="NavLInkH text-uppercase">Elements</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item position-relative h6 px-2 small fw-bold"><a href="#BLOG" class="NavLInkH nav-link pe-2 dropdown" data-bs-target="#DropDownPage" data-bs-toggle="dropdown">BLOG</a>
+                                            <ul class="dropdown-menu position-absolute" id="DropDownBlog">
+                                                <li class="dropdown-item h6 px-2 small fw-bold"><a href="#" class="NavLInkH text-uppercase">blog</a></li>
+                                                <li class="dropdown-item h6 px-2 small fw-bold"><a href="#" class="NavLInkH text-uppercase">blog-details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item h6 px-2 small fw-bold "><a href="#CONTACT" class="NavLInkH nav-link">CONTACT</a></li>
+                                        <li class="nav-item h6 px-2 small fw-bold "><a href="#" class="NavLInkH nav-link"></a></li>
+                                    </ul>
+                                </div>
+                            
+                        </nav>
+                        <div class="py-2"></div>
+
+                    </div>
+                </div>
+            </section>
+
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container  text-center">
+                    <div class="w-100 w-lg-50">
+                        <h1 class="fw-bold text-light">Build Your <span class="bg-warning rounded fw-bold p-1 text-black">Dream</span></h1>
+                        <p class="text-light mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        <button type="button" class="BTN_BLACK  mt-3">Discover Now</button>
+                    </div>
+                </div>
+            </section>
+            <section class="OUR_SERVICE " id="SERVICES">
+                <div class="py-5"></div>
+                <div class="py-5"></div>
+                <div class=" d-flex justify-content-center">
+                    <div class="HEADING text-center">
+                        <div class="pb-5 w-lg-50">
+                            <h2 class="fw-bold">Our Offered Services</h2>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consecteturadipis icing elit,</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="SERVICE_ONE rounded col-11 col-lg-3 m-2">
+                                <img src="https://preview.colorlib.com/theme/builder/img/icon/service-icon-1.png" alt="" class="pt-4">
+                                <h3 class="fw-bold py-3">Building Drawings</h3>
+                                <p class="text-secondary pb-3">Lorem ipsum dolor sit amet, consecteturadipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+
+                            <div class="SERVICE_ONE rounded col-11 col-lg-3 m-2">
+                                <img src="data:image/png;base64,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" alt="" class="pt-4">
+                                <h3 class="fw-bold py-3">Building Drawings</h3>
+                                <p class="text-secondary  pb-3">Lorem ipsum dolor sit amet, consecteturadipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+
+                            <div class="SERVICE_ONE rounded col-11 col-lg-3 m-2 ">
+                                <img src="https://preview.colorlib.com/theme/builder/img/icon/service-icon-3.png" alt="" class="pt-4">
+                                <h3 class="fw-bold py-3">Building Drawings</h3>
+                                <p class="text-secondary  pb-3">Lorem ipsum dolor sit amet, consecteturadipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5"></div>
+                <div class="py-5"></div>
+            </section>
+            <section class="OUR_PROJECT" id="Projects">
+                <div class="headOurLetestProject w-lg-50 text-center">
+                    <h2 class="fw-bold">Our Latest Projects</h2>
+                    <p class="text-secondary">Who are in extremely love with eco friendly system.</p>
+                </div>
+                <div class="py-3"></div>
+                <div class="row g-0">
+                    <div class="conTAin col-12 col-lg-4 position-relative">
+                        <img src="images/xbuilder-1.jpg.pagespeed.ic.pKkzuadCkA.webp" alt="" class="w-100 img-fluid">
+                        <div class="oppacityHover position-absolute" >
+                            <div class="pt-5">
+                                <h3 class="fw-bold pb-2">Alex Complex for Residence</h3>
+                                <p class="small px-lg-4">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conTAin col-12 col-lg-4 position-relative">
+                        <img src="images/xbuilder-2.jpg.pagespeed.ic.Is483p2t0a.webp" alt="" class="w-100 img-fluid">
+                        <div class="oppacityHover position-absolute" >
+                            <div class="pt-5">
+                                <h3 class="fw-bold pb-2">Alex Complex for Residence</h3>
+                                <p class="small px-lg-4">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conTAin col-12 col-lg-4 position-relative">
+                        <img src="images/xbuilder-3.jpg.pagespeed.ic.k4EdwBhwuk.webp" alt="" class="w-100 img-fluid">
+                        <div class="oppacityHover position-absolute" >
+                            <div class="pt-5">
+                                <h3 class="fw-bold pb-2">Alex Complex for Residence</h3>
+                                <p class="small px-lg-4">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conTAin col-12 col-lg-4 position-relative">
+                        <img src="images/xbuilder-4.jpg.pagespeed.ic.xnz80d6RMX.webp" alt="" class="w-100 img-fluid">
+                        <div class="oppacityHover position-absolute" >
+                            <div class="pt-5">
+                                <h3 class="fw-bold pb-2">Alex Complex for Residence</h3>
+                                <p class="small px-lg-4">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conTAin col-12 col-lg-4 position-relative">
+                        <img src="images/xbuilder-5.jpg.pagespeed.ic.LYSenILTxA.webp" alt="" class="w-100 img-fluid">
+                        <div class="oppacityHover position-absolute" >
+                            <div class="pt-5">
+                                <h3 class="fw-bold pb-2">Alex Complex for Residence</h3>
+                                <p class="small px-lg-4">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conTAin col-12 col-lg-4 position-relative">
+                        <img src="images/xbuilder-6.jpg.pagespeed.ic.s4R872q3Th.webp" alt="" class="w-100 img-fluid">
+                        <div class="oppacityHover position-absolute" >
+                            <div class="pt-5">
+
+                                <h3 class="fw-bold pb-2">Alex Complex for Residence</h3>
+                                <p class="small px-lg-4">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team" id="ABOUT">
+                <div class="container">
+                    <div class="py-5"></div>
+                    <div class="py-5"></div>
+                    <div class="data w-lg-50 text-center">
+                        <h2 class="fw-bold">Meet Our Expert Members</h2>
+                        <p class="text-secondary pb-4">Who are in extremely love with eco friendly system.</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-lg-3 mb-4">
+                            <div class="TeamOver position-relative">
+                                <img src="images/xteam-4.jpg.pagespeed.ic.WohgaC0GXZ.webp" alt="" class="w-100 img-fluid">
+                                <div class="OverLay position-absolute">
+                                    <div class="py-5"></div>
+                                    <div class="py-3"></div>
+                                    <ul class="d-flex">
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fas fa-basketball-ball"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-twitter"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="head_detail text-center">
+                                <h4 class="fw-bold pt-3">Ethel Davis</h4>
+                                <span class="text-secondary">Managing Director (Sales)</span>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-3 mb-4">
+                            <div class="TeamOver position-relative">
+                                <img src="images/xteam-1.jpg.pagespeed.ic.yZlVhxKOJ_.webp" alt="" class="w-100 img-fluid">
+                                <div class="OverLay position-absolute">
+                                    <div class="py-5"></div>
+                                    <div class="py-3"></div>
+                                    <ul class="d-flex">
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fas fa-basketball-ball"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-twitter"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="head_detail text-center">
+                                <h4 class="fw-bold pt-3">Ethel Davis</h4>
+                                <span class="text-secondary">Managing Director (Sales)</span>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-3 mb-4">
+                            <div class="TeamOver position-relative ">
+                                <img src="images/xteam-2.jpg.pagespeed.ic.BiakeAYZ2M.webp" alt="" class="w-100 img-fluid">
+                                <div class="OverLay position-absolute">
+                                    <div class="py-5"></div>
+                                    <div class="py-3"></div>
+                                    <ul class="d-flex">
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fas fa-basketball-ball"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-twitter"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="head_detail text-center">
+                                <h4 class="fw-bold pt-3">Ethel Davis</h4>
+                                <span class="text-secondary">Managing Director (Sales)</span>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-3 mb-4">
+                            <div class="TeamOver position-relative ">
+                                <img src="images/xteam-3.jpg.pagespeed.ic.EGpDzKGdSZ.webp" alt="" class="w-100 img-fluid">
+                                <div class="OverLay position-absolute">
+                                    <div class="py-5"></div>
+                                    <div class="py-3"></div>
+                                    <ul class="d-flex">
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fas fa-basketball-ball"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack "><i class="fab fa-twitter"></i></a></li>
+                                        <li class="px-4"><a href="#" class="hoverBlack"><i class="fab fa-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="head_detail text-center">
+                                <h4 class="fw-bold pt-3">Ethel Davis</h4>
+                                <span class="text-secondary">Managing Director (Sales)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5"></div>
+                <div class="py-5"></div>
+            </section>
+            <section class="projectComplted">
+                <div class="container">
+               
+                    <div class="py-5"></div>
+                    <div class="row text-center justify-content-between text-lg-start">
+                        <div class="col-11 col-lg-2"><h3 class="fw-bold pt-4 display-5">596</h3><span>Projects Completed</span></div>
+                        <div class="col-11 col-lg-2"><h3 class="fw-bold pt-4 display-5">552</h3><span>Really Happy Clients</span></div>
+                        <div class="col-11 col-lg-2"><h3 class="fw-bold pt-4 display-5">5962</h3><span>Total Tasks Completed</span></div>
+                        <div class="col-11 col-lg-2"><h3 class="fw-bold pt-4 display-5">1009</h3><span>Cups of Coffee Taken</span></div>
+                        <div class="col-11 col-lg-2"><h3 class="fw-bold pt-4 display-5">434</h3><span>In House Professionals</span></div>
+                    </div>
+                    <div class="py-5"></div>
+                   
+                </div>
+            </section>
+            <section class="feaTures">
+                <div class="py-5"></div>
+                <div class="py-5"></div> 
+                <div class="">
+                    <div class="w-lg-50 text-center text-center">
+                        <h2 class="fw-bold">Some Features that Made us Unique</h2>
+                        <p class="text-secondary">Who are in extremely love with eco friendly system.</p>
+                    </div>
+                    <div class="row d-flex justify-content-center pt-5">
+                        <div class="HoverCARD col-11 col-lg-3 col-md-6 border rounded px-4 m-2 py-2">
+                            <div class="row p-0 m-0">
+                                <div class=""><h4 class="pb-3"><i class="fas fa-user pe-4"></i>Expert Technicians</h4></div>
+                            </div>
+                            <p class="text-secondary text-start">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                        </div>
+
+                        <div class="HoverCARD col-11 col-lg-3 col-md-6 border rounded px-4 py-2 m-2">
+                            <div class="row">
+                                <div class=""><h4 class="pb-3"> <i class="fas fa-id-card pe-4"></i>Expert Technicians</h4></div>
+                            </div>
+                            <p class="text-secondary text-start">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                        </div>
+
+                        <div class="HoverCARD col-11 col-lg-3 col-md-6 border rounded px-4 py-2 m-2">
+                            <div class="row">
+                                <div class=""><h4 class="pb-3"><i class="fas fa-tty pe-4"></i>Expert Technicians</h4></div>
+                            </div>
+                            <p class="text-secondary text-start">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                        </div>
+
+                        <div class="HoverCARD col-11 col-lg-3 col-md-6 border rounded px-4 py-2 m-2">
+                            <div class="row">
+                                <div class=""><h4 class="pb-3"><i class="fas fa-rocket pe-4"></i>Expert Technicians</h4></div>
+                            </div>
+                            <p class="text-secondary text-start">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                        </div>
+
+                        <div class="HoverCARD col-11 col-lg-3 col-md-6 border rounded px-4 py-2 m-2">
+                            <div class="row">
+                                <div class=""><h4 class="pb-3"><i class="fab fa-diaspora pe-4"></i>Expert Technicians</h4></div>
+                            </div>
+                            <p class="text-secondary text-start">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                        </div>
+
+                        <div class="HoverCARD col-11 col-lg-3 col-md-6 border rounded px-4 m-2 py-2">
+                            <div class="row">
+                                <div class=""><h4 class="pb-3"><i class="far fa-comment pe-4"></i>Expert Technicians</h4></div>
+                            </div>
+                            <p class="text-secondary text-start">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5"></div>            
+                <div class="py-5"></div>            
+
+            </section>
+            <section class="bg-light">
+                <div class="py-5"></div>      
+                <div class="py-5"></div>    
+                <div class="row justify-content-center">
+                    <div class="TEAM1 col-11 col-lg-5 border rounded m-2 d-flex p-3">
+                        <div class="pe-3">
+                            <img src="images/xtesti-1.png.pagespeed.ic.tFyQpm2LIy.webp" alt="">
+                        </div>
+                        <div>
+                            <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                            <h4 class="fw-bold">Mark Alviro Wiens</h4>
+                            <h5 class="small">CEO at Google</h5>
+                        </div>
+                    </div>
+                    <div class="TEAM1 col-11 col-lg-5 border rounded m-2 d-flex p-3">
+                        <div class="pe-3">
+                            <img src="images/xtesti-2.png.pagespeed.ic.v7PCjhpOMx.webp" alt="">
+                        </div>
+                        <div class="">
+                            <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                            <h4 class="fw-bold">Mark Alviro Wiens</h4>
+                            <h5 class="small">CEO at Google</h5>
+                        </div>
+                    </div>
+                </div>        
+                <div class="py-5"></div>            
+                <div class="py-5"></div>            
+
+            </section>
+            <section>
+                <div class="py-5"></div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-11 col-lg-2 mt-4"><img src="images/xc-logo-1.png.pagespeed.ic.xGdGUEH-1m.webp" alt="" class="IMAGEOPPACITY img-fluid"></div>
+                    <div class="col-11 col-lg-2 mt-4"><img src="images/xc-logo-2.png.pagespeed.ic.OMrLcfI1Hy.webp" alt="" class="IMAGEOPPACITY img-fluid"></div>
+                    <div class="col-11 col-lg-2 mt-4"><img src="images/xc-logo-3.png.pagespeed.ic.NQcNeNZ4a_.webp" alt="" class="IMAGEOPPACITY img-fluid"></div>
+                    <div class="col-11 col-lg-2 mt-4"><img src="images/xc-logo-4.png.pagespeed.ic.S5vWVkWjmD.webp" alt="" class="IMAGEOPPACITY img-fluid"></div>
+                    <div class="col-11 col-lg-2 mt-4"><img src="images/xc-logo-5.png.pagespeed.ic.-Y5kLux1yA.webp" alt="" class="IMAGEOPPACITY img-fluid"></div>
+                </div>
+                <div class="py-5"></div>
+            </section>
+        </main>
+        <footer class="footer-area p_120 bg-dark">
+            <div class="py-5"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3  col-md-6 col-sm-6">
+                            <div class="single-footer-widget ab_wd">
+                                <h6 class="footer_title text-light h4 pb-4">About Us</h6>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-footer-widget contact_wd">
+                                <h6 class="footer_title text-light h4 pb-4">Contact Us</h6>
+                                <p class="text-secondary">56/8, Santa Monica bullevard, Los angeles, california, United states of america</p>
+                                <a href="tel:01265325689746" class="text-warning h3">012-6532-568-9746</a>
+                                <a href="tel:01265325689746" class="text-warning h3">012-6532-568-9746</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-sm-6 offset-lg-1">
+                            <div class="single-footer-widget">
+                                <h6 class="footer_title text-light h4 pb-4">Newsletter</h6>
+                                <p class="text-secondary">You can trust us. we only send promo offers, not a single spam.</p>
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" class="subscribe_form relative">
+                                    <div class="mainInputFlex">
+                                        <input name="EMAIL" placeholder="Your email address" required="" class="InputEmal">
+                                        <button class="sub-btn"><span class="lnr lnr-arrow-right">&larr;</span></button>
+                                    </div>
+                                    <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3"></div>
+                        <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                            <p class="col-lg-8 col-md-8 footer-text m-0 text-secondary">Copyright © 2022 All rights reserved | This template is made with <i class="fas fa-heart text-warning"></i> by <a href="_top" target="_blank" class="text-secondary">Colorlib</a></p>
+                            <div class="col-lg-4 col-md-4 footer-social">
+                                <a href="#" class="px-2 text-secondary"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="px-2 text-secondary"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="px-2 text-secondary"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" class="px-2 text-secondary"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            <div class="py-5"></div>
+            </footer>
+    </section>
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+        <!-- AOS Animation script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <!-- script -->
+        <script>
+            AOS.init();
+        </script>
+</body>
+</html>
